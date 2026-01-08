@@ -1,0 +1,107 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(19, 70, 134);
+  margin: 0;
+  min-height: 100vh;
+
+  background-image: linear-gradient(
+    -45deg,
+    rgb(253, 244, 227) 0%,
+    rgb(253, 244, 227) 32.5%,
+
+    rgb(234, 91, 111) 32.5%,
+    rgb(234, 91, 111) 42.5%,
+
+    rgb(255, 137, 79) 42.5%,
+    rgb(255, 137, 79) 52.5%,
+
+    rgb(255, 203, 97) 52.5%,
+    rgb(255, 203, 97) 62.5%,
+
+    rgb(119, 190, 240) 62.5%,
+    rgb(119, 190, 240) 72.5%,
+
+    rgb(253, 244, 227) 72.5%,
+    rgb(253, 244, 227) 100%
+  );
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  margin: 120px auto;
+  max-width: 600px;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-family: "Alfa Slab One", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 1.5;
+  color: #134686;
+}
+
+form {
+  padding: 30px;
+  background-color: rgba(251, 247, 241, 0.7);
+  box-shadow: 0px 20px 60px rgba(19, 70, 134, 0.1);
+  border-radius: 15px;
+  display: flex;
+}
+
+.prompt-field {
+  padding: 16px;
+  border: 1px solid rgb(19, 70, 134);
+  box-shadow: 0px 20px 60px rgba(19, 70, 134, 0.1);
+  width: 80%;
+  font-size: 16px;
+  border-radius: 10px;
+  line-height: 20px;
+}
+
+.submit-button {
+  padding: 16px 26px;
+  border: 1px solid rgb(19, 70, 134);
+  border-radius: 10px;
+  background-color: rgb(19, 70, 134);
+  box-shadow: 0px 20px 60px rgba(19, 70, 134, 0.1);
+  color: rgb(251, 247, 241);
+  margin-left: 5px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.submit-button:hover {
+  cursor: pointer;
+  background-color: rgb(16, 57, 108);
+}
+
+.poem-container {
+  padding: 30px;
+  background-color: rgba(251, 247, 241, 0.7);
+  box-shadow: 0px 20px 60px rgba(19, 70, 134, 0.1);
+  border-left: 3px solid rgb(19, 70, 134);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  margin-top: 5px;
+  font-size: 15px;
+  line-height: 28px;
+}
+
+footer {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 30px;
+}
+
+a {
+  color: rgb(253, 250, 243);
+}

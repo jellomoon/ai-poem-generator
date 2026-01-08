@@ -3,42 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/style.css" />
-    <title>Robo Bard</title>
+    <title>🤖 Robo Bard</title>
   </head>
   <body>
-    <header>
-      <h1>AI Poem Generator</h1>
-    </header>
+    <div class="container">
+      <header>
+        <h1>AI Poem Generator</h1>
+      </header>
 
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter a topic"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-    </main>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter a topic..."
+            autofocus
+            required
+            autocomplete="off"
+            class="prompt-field"
+          />
+          <input type="submit" value="Submit" class="submit-button" />
+        </form>
+      </main>
 
-    <div>
-      From fairest creatures we desire increase,
-      <br />
-      That thereby beauty's rose might never die,
+      <div class="poem-container">
+        From fairest creatures we desire increase,
+        <br />
+        That thereby beauty's rose might never die,
+      </div>
+
+      <footer>
+        Project coded by
+        <a href="https://github.com/jellomoon" target="_blank"
+          >Mona Beyersdorf</a
+        >. Open-sourced on
+        <a href="https://github.com/jellomoon/ai-poem-generator" target="_blank"
+          >Github</a
+        >. Hosted on
+        <a href="https://robobard.netlify.app/" target="_blank">Netlify</a>.
+      </footer>
     </div>
-
-    <footer>
-      Project coded by
-      <a href="https://github.com/jellomoon" target="_blank">Mona Beyersdorf</a
-      >. Open-sourced on
-      <a href="https://github.com/jellomoon/ai-poem-generator" target="_blank"
-        >Github</a
-      >. Hosted on
-      <a href="https://robobard.netlify.app/" target="_blank">Netlify</a>.
-    </footer>
     <script src="src/index.js"></script>
   </body>
 </html>
