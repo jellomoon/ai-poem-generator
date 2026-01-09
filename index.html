@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>🤖 Robo Bard</title>
   </head>
   <body>
@@ -19,7 +20,7 @@
       </header>
 
       <main>
-        <form>
+        <form id="prompt-input-form">
           <input
             type="text"
             placeholder="Enter a topic..."
@@ -32,11 +33,7 @@
         </form>
       </main>
 
-      <div class="poem-container">
-        From fairest creatures we desire increase,
-        <br />
-        That thereby beauty's rose might never die,
-      </div>
+      <div class="poem-container" id="poem"></div>
 
       <footer>
         Project coded by
