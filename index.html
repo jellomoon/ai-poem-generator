@@ -14,28 +14,34 @@
     <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
     <title>🤖 Robo-Bard</title>
   </head>
-  <body>
+  <body class="background">
     <div class="container">
       <header>
         <h1>Robo-Bard</h1>
       </header>
 
       <main>
-        <form id="prompt-input-form">
-          <input
-            type="text"
-            placeholder="Enter a topic..."
-            autofocus
-            required
-            autocomplete="off"
-            class="prompt-field"
-            id="user-input"
-          />
-          <input type="submit" value="Submit" class="submit-button" />
-        </form>
+        <div class="form-wrapper">
+          <form id="prompt-input-form">
+            <input
+              type="text"
+              placeholder="What would you like your poem to be about?"
+              autofocus
+              required
+              autocomplete="off"
+              class="prompt-field"
+              id="user-input"
+            />
+            <input type="submit" value="Submit" class="submit-button" />
+          </form>
+          <div class="hint">
+            Prompt can be a word, phrase, or emoji, e.g. Cats, What is love,
+            🤖...
+          </div>
+        </div>
       </main>
 
-      <div class="poem-container" id="poem"></div>
+      <div class="poem-container hidden" id="poem"></div>
 
       <footer>
         Project coded by
